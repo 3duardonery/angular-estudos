@@ -4,6 +4,11 @@
             <h3>{{job.title}}</h3>
             <h4>{{job.state}}</h4>
         </div>
+        <div class="publish-at">
+            <div class="publish-at-date">
+                <h6>publicado em {{job.created_at | date:'longDate'}}</h6>
+            </div>
+        </div>
         <div class="job-box-body job-body">
             <markdown [data]="job.body"></markdown>
         </div>
