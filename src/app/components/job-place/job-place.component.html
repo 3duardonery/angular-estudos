@@ -1,0 +1,14 @@
+<div class="parent-box">
+    <div class="job-box">
+        <div class="job-box-title job-title">
+            <h3>{{job.title}}</h3>
+            <h4>{{job.state}}</h4>
+        </div>
+        <div class="job-box-body job-body">
+            <markdown [data]="job.body"></markdown>
+        </div>
+        <div class="job-box-footer job-footer">
+            <button class="btn" (click)="handleClick(job.html_url)">Aplicar</button>
+        </div>
+    </div>
+</div>

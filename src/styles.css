@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #f3f3f3;
+  font-family: "Montserrat", sans-serif;
+  height: min-content;
+}
+
+.class {
+  border-bottom: 1px solid red;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border: 2px solid #4caf50;
+}
+
+.btn:hover {
+  background-color: #fff; /* Green */
+  color: #4caf50;
+}

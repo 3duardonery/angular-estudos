@@ -1,0 +1,14 @@
+.custom-input {
+  width: 70%;
+  height: 50px;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 0 0 0 15px;
+  border: 0;
+  color: #7a7878;
+}
+
+::placeholder {
+  color: #bdb8b8;
+}
