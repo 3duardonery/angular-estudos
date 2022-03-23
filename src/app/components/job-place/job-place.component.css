@@ -10,7 +10,7 @@
   flex-direction: column;
   width: 75%;
   height: fit-content;
-  margin: 20px;
+  margin: 10px;
   border-radius: 5px;
   border: 1px solid rgb(124, 122, 122);
   background-color: #fff;
@@ -52,4 +52,21 @@
   display: flex;
   padding: 10px 15px 10px 15px;
   width: 95%;
+}
+
+.publish-at {
+  display: flex;
+  padding: 0 15px 0 15px;
+  font-family: "Roboto Mono", monospace;
+  color: #7a7878;
+  width: 95%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.publish-at-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 30px;
 }
