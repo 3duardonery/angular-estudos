@@ -8,13 +8,28 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 75%;
+  width: 50%;
   height: fit-content;
   margin: 10px;
   border-radius: 5px;
   border: 1px solid rgb(124, 122, 122);
   background-color: #fff;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .job-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(124, 122, 122);
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .job-box-title {

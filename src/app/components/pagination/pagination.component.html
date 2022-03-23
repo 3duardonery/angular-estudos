@@ -1,3 +1,5 @@
 <div class="pagination-box">
-    <button (click)="handleClick(page)" *ngFor="let page of pagination" class="pagination-button">{{page}}</button>
+    <div class="pagination-row">
+        <button (click)="handleClick(page)" *ngFor="let page of pagination" class="pagination-button">{{page}}</button>
+    </div>
 </div>

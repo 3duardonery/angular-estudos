@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+.pagination-row {
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
 .pagination-button {
   margin: 5px;
 }
