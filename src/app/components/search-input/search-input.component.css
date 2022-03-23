@@ -1,5 +1,5 @@
 .custom-input {
-  width: 70%;
+  width: 50%;
   height: 50px;
   font-size: large;
   font-weight: bold;
@@ -7,6 +7,19 @@
   padding: 0 0 0 15px;
   border: 0;
   color: #7a7878;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .custom-input {
+    width: 90%;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 0 0 0 15px;
+    border: 0;
+    color: #7a7878;
+  }
 }
 
 ::placeholder {
