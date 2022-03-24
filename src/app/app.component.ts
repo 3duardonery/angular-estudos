@@ -4,8 +4,8 @@ import { JobResult } from './models/job-result';
 import { Source } from './models/source';
 import { JobService } from './services/job.service';
 import { IFilterState, setCurrentPage } from './store/app.state';
-import { Store, select } from '@ngrx/store'; 
-import { map, Observable, take } from 'rxjs';
+import { Store } from '@ngrx/store'; 
+import { map, take } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -82,8 +82,7 @@ export class AppComponent implements OnInit {
     );
   }
 
-  openPage(url: string): void {
-    
+  openPage(url: string): void {    
     window.open(url, '_blank');
   }
 
