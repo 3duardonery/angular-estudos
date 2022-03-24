@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MarkdownModule } from 'ngx-markdown';
+import { StoreModule } from '@ngrx/store';
 
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
@@ -18,6 +19,8 @@ import { JobPlacesBoxComponent } from './components/job-places-box/job-places-bo
 import { JobPlaceComponent } from './components/job-place/job-place.component';
 import { LoadingComponent } from './components/loading/loading.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { SelectSourceComponent } from './components/select-source/select-source.component';
+import { filterReducer } from './store/app.state';
 
 @NgModule({
   declarations: [
@@ -34,12 +37,14 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     JobPlacesBoxComponent,
     JobPlaceComponent,
     LoadingComponent,
-    PaginationComponent
+    PaginationComponent,
+    SelectSourceComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     MarkdownModule.forRoot(),
+    StoreModule.forRoot({app: filterReducer}),
   ],
   providers: [],
   bootstrap: [AppComponent]

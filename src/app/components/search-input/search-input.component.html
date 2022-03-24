@@ -1,1 +1,8 @@
-<input type="text" class="custom-input" placeholder="Procure por tecnologia" (keydown)="handleInput($event)">
+<div class="input-container">
+    <input type="text" class="custom-input" placeholder="Procure por tecnologia" (keydown)="handleInput($event)">
+    <select (change)="handleSource($event)">
+        <option value="frontendbr">FrontendBR</option>
+        <option value="backend-br">BackendBR</option>
+        <option value="react-brasil">ReactBR</option>
+    </select>
+</div>

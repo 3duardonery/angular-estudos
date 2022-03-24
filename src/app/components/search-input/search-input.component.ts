@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Source } from 'src/app/models/source';
 
 @Component({
   selector: 'app-search-input',
@@ -7,6 +8,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class SearchInputComponent implements OnInit {
   @Output() inputTextQuery: EventEmitter<string> = new EventEmitter<string>();
+  @Output() sourceValue: EventEmitter<string> = new EventEmitter<string>();
+  @Input() sources: Source[] = [];
 
   constructor() { }
 
@@ -15,6 +18,10 @@ export class SearchInputComponent implements OnInit {
 
   handleInput(text: any): void {
     this.inputTextQuery.emit(text);
+  }
+
+  handleSource(source: any): void {
+    this.sourceValue.emit(source);
   }
 
 }
