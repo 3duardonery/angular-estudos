@@ -1,14 +1,16 @@
 <div class="container">
     <h2>Vagas para Desenvolvimento de Software</h2>
-    <app-search-input (inputTextQuery)="handleInputSearch($event)"></app-search-input>
+    <app-search-input (inputTextQuery)="handleInputSearch($event)" [sources]="sources"
+        (sourceValue)="onSourceSelected($event)"></app-search-input>
     <app-job-places-box [foundJobPlaces]="jobsResult.total_count"></app-job-places-box>
     <div *ngIf="isLoading; else contentJobs">
         <app-loading></app-loading>
     </div>
     <ng-template #contentJobs>
         <app-pagination [totalPages]="totalPages" (currentPageClick)="handlePageClick($event)"></app-pagination>
+        <app-job-place *ngFor="let currentJob of jobsResult.items" [job]="currentJob"
+            (onClick)="openPage(currentJob.html_url)">
+        </app-job-place>
     </ng-template>
-    <app-job-place *ngFor="let currentJob of jobsResult.items" [job]="currentJob"
-        (onClick)="openPage(currentJob.html_url)">
-    </app-job-place>
+
 </div>

@@ -1,5 +1,6 @@
 <div class="pagination-box">
     <div class="pagination-row">
-        <button (click)="handleClick(page)" *ngFor="let page of pagination" class="pagination-button">{{page}}</button>
+        <button (click)="handleClick(page)" *ngFor="let page of pagination" class="pagination-button"
+            [ngClass]="{'disabled': page === (current_page$ | async)}">{{page}}</button>
     </div>
 </div>

@@ -12,3 +12,11 @@
 .pagination-button {
   margin: 5px;
 }
+
+.disabled {
+  background-color: #4caf50;
+  outline: double;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
