@@ -14,7 +14,7 @@ import { map, Observable, take } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   
-  title = 'course_app';
+  title = 'teste';
   userName: string = 'eduardo_nery';
   userData = {
     email: 'email@email.com',
